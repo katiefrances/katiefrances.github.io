@@ -30,9 +30,9 @@ body {
   padding: 20px;
 }
 
-.nested-row {
+/* .nested-row {
   background: orangered;
-}
+} */
 
 
 /* Individual div styling*/
@@ -51,13 +51,18 @@ body {
 }
 
 .about-left {
-  background: darkgray;
+  background: 3;
 }
 
 .about-right {
   background: grey;
 }
 
+
+@media only screen and (min-width: 48em)
+.col-sm-6 {
+  .flex-basis: 50%:
+}
 
 /* WHAT I DO */
 .what-i-do-left {
