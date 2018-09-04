@@ -17,25 +17,18 @@ body {
 
   /* Structure */
 
- #wrapper {
+ /* #wrapper {
    background: green;
    width: 100%;
- }
-
+ } */
 
 /*  To overcome the weird ass border that comes up on  */
 .col-xs-12 {
-  padding: 0;
+  /* padding: 0; */
 }
 
 .row {
   margin-right: 0rem;
-}
-
-/* Inner row */
-.inner {
-  background: #f4f4f4;
-  padding: 20px;
 }
 
 
@@ -103,6 +96,18 @@ body {
 
 /* ABOUT */
 
+/* Inner row */
+.about-row {
+  height: 100vh;
+  background: #f1f1f1;
+  align-items: center;
+}
+
+/* .inner {
+  background: #f4f4f4;
+  padding: 20px;
+} */
+
 .about-text {
   padding: 2rem;
   background: #e9e9e9;
@@ -110,6 +115,10 @@ body {
 
 /* Image */
 .image {
+  padding: 20px;
+}
+
+.image img {
   align-content: center;
 }
 
@@ -118,9 +127,9 @@ body {
   border-radius: 50%;
 }
 
-/* .about-right {
-
-} */
+.about-text {
+  text-align: left;
+}
 
 .about-left, .start-xs h2 {
   margin-bottom: -30px;
