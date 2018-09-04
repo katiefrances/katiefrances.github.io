@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+  }
+
+  /* Structure */
+
+.col-xs-12 {
+  padding: 0;
+}
+  
+.container {
+  /* padding: 00px; */
+}
+
+.box {
+
+}
+
+/* Rows */
+.row {
+  /* background: greenyellow; */
+  /* padding: 10px; */
+}
+
+/* Inner row */
+.inner {
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.nested-row {
+  background: orangered;
+}
+
+
+/* Individual div styling*/
+/* ---------------------------- */
+
+/* ABOUT */
+
+/* Image */
+.image {
+  align-content: center;
+}
+
+/* About heading & desc divs */
+.about {
+  padding: 10px;
+}
+
+.about-left {
+  background: darkgray;
+}
+
+.about-right {
+  background: grey;
+}
+
+
+/* WHAT I DO */
+.what-i-do-left {
+  background: darkgray;
+}
+
+.what-i-do-right {
+  background: darkgrey;
+}
+
+
+
+
+/* col-md-offset-3 col-md-4 col-lg-3 first-row-left */
+/* col-md-offset-4 col-md-6 col-lg-4 first-row-right */
+/* col-md-offset-3 */
+/* col-md-offset-4 */
+
+
+
+/* @mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+// usage
+.my-box {
+  padding: 10px;
+  
+  @include for-desktop-up {
+    padding: 20px;
+  }
+} */
