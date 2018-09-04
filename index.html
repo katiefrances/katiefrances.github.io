@@ -20,6 +20,7 @@
     -->
 
     
+    <div id="wrapper">
     <!-- NAV -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -33,18 +34,18 @@
 
       <!-- NAv TRIGGER -->
       <div class="navbar">
-        <span style="font-size:30px;cursor:pointer" class="navbar" onclick="openNav()"><i class="fas fa-bars"></i></span>
+        <span style="font-size:30px;cursor:pointer" class="navbar-icon" onclick="openNav()"><i class="fas fa-bars"></i></span>
 
       </div>
 
-    <div class="row center-lg">
+    <div class="row ">
         <!-- Nested grid for image -->
 
             <!-- Image -->
             <div class="col-md-3 col-sm-3 center-xs">
                 <img class="me" src="https://www.fillmurray.com/200/200"/>
             </div>
-            
+
             <!-- About boxes -->
             <div class="col-md-5 col-sm-6 col-xs-12">
                 <div class="col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-4 col-xs-4 center-xs about-left">
@@ -88,15 +89,18 @@
         </div> <!-- / Inner row-->
     </div> <!-- / Outer row-->
     <!-- / FIRST ROW -->
+</div>
 
     <script>
-        function openNav() {
-          document.getElementById("myNav").style.width = "100%";
-        }
-        
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-        }
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
         </script>
 </body>
 </html>

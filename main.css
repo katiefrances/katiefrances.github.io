@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
   font-family: 'Roboto', sans-serif;
   /* padding: 20px; */
-  margin: 0;
+  margin: 0 auto;
   }
 
   ul,li {
@@ -17,16 +17,20 @@ body {
 
   /* Structure */
 
-  .box {
-    /* min-width: 15rem; */
-    /* padding: 10px; */
-  }
+ #wrapper {
+   background: green;
+   width: 100%;
+ }
+
 
 /*  To overcome the weird ass border that comes up on  */
 .col-xs-12 {
   padding: 0;
 }
 
+.row {
+  margin-right: 0rem;
+}
 
 /* Inner row */
 .inner {
@@ -39,9 +43,13 @@ body {
 
 /* NAV */
 .navbar {
-  background: transparent;
+  background: red;
   text-align: right;
   padding: 10px;
+}
+
+.navbar-icon {
+  background: yellow;
 }
 
 .overlay {
@@ -104,14 +112,14 @@ body {
 }
 
 /* Image */
-.image {
+/* .image {
   align-content: center;
 }
 
 .me  {
   max-width: 10rem;
   border-radius: 50%;
-}
+} */
 
 /* .about-right {
 
