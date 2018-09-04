@@ -59,10 +59,10 @@ body {
 }
 
 
-@media only screen and (min-width: 48em)
+/* @media only screen and (min-width: 48em)
 .col-sm-6 {
   .flex-basis: 50%:
-}
+} */
 
 /* WHAT I DO */
 .what-i-do-left {
