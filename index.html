@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="flexboxgrid.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
     <script src="main.js"></script>
 </head>
 <body>
@@ -16,6 +19,7 @@
      - Fix alignment of divs
     -->
 
+    
     <!-- NAV -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -27,11 +31,14 @@
         </div>
       </div>
 
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <!-- NAv TRIGGER -->
+      <div class="navbar">
+        <span style="font-size:30px;cursor:pointer" class="navbar" onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+      </div>
 
     <div class="row center-lg">
         <!-- Nested grid for image -->
-        <div class="row inner middle-md around-xs">
 
             <!-- Image -->
             <div class="col-md-3 col-sm-3 center-xs">

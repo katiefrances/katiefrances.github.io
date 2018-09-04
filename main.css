@@ -3,7 +3,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  padding: 20px;
+  /* padding: 20px; */
+  margin: 0;
   }
 
   ul,li {
@@ -34,10 +35,15 @@ body {
 }
 
 
-
-/* Individual div styling*/
+/* Section Styling */
 
 /* NAV */
+.navbar {
+  background: transparent;
+  text-align: right;
+  padding: 10px;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -74,8 +80,8 @@ body {
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: -20px;
+  right: 10px;
   font-size: 60px;
 }
 
