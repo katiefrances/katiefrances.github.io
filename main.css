@@ -3,8 +3,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* padding: 20px; */
   margin: 0 auto;
+
   }
 
   ul,li {
@@ -15,31 +15,44 @@ body {
     font-size: 2rem;
   }
 
+
   /* Structure */
 
- /* #wrapper {
-   background: green;
-   width: 100%;
- } */
+ #wrapper {
+   max-width: 100%;
+   padding-top: -55px;
+ }
 
-/*  To overcome the weird ass border that comes up on  */
-.col-xs-12 {
-  /* padding: 0; */
-}
+/*  To overcome the weird ass gap that comes up   */
 
 .row {
   margin-right: 0rem;
+
 }
 
+.inner {
+  width: 50%;
+}
+
+
+/* COLUMN OVERRIDES */
+.col-xs-12 {
+  background: #818181;
+  margin-top: -80px;
+}
 
 /* Section Styling */
 
 /* NAV */
+
+
 .navbar {
-  background: red;
+  background:transparent;
   text-align: right;
   padding: 10px;
+  /* height: 50px; */
 }
+
 
 .overlay {
   height: 0%;
@@ -83,30 +96,35 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-.overlay {overflow-y: auto;}
-.overlay a {font-size: 20px}
-.overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
+
+/* ---------------------------- */
+/* HEADER */
+.header {
+  background: #818181;
+  height: 100vh;
 }
 
 /* ---------------------------- */
 
 /* ABOUT */
 
+
 /* Inner row */
 .about-row {
-  height: 100vh;
+  min-height: 100vh;
   background: #f1f1f1;
   align-items: center;
 }
 
-/* .inner {
-  background: #f4f4f4;
-  padding: 20px;
-} */
+
 
 .about-text {
   padding: 2rem;
@@ -116,11 +134,12 @@ body {
 /* Image */
 .image {
   padding: 20px;
+  background: #818181;
 }
 
-.image img {
+/* .image img {
   align-content: center;
-}
+} */
 
 .me  {
   max-width: 10rem;
@@ -129,9 +148,15 @@ body {
 
 .about-text {
   text-align: left;
+  width: 100%;
 }
 
-.about-left, .start-xs h2 {
+.about-row {
+  background: rebeccapurple;
+}
+
+/* ABOUT H1 */
+.about-left, .start-xs h1 {
   margin-bottom: -30px;
   background: #fff;
   position: relative;
@@ -139,7 +164,7 @@ body {
 
 /* WHAT I DO */
 
-.what-i-do-left, .end-xs h2 {
+.what-i-do-left, .end-xs h1 {
   background: #fff;
   margin-bottom: -30px;
   position: relative;
