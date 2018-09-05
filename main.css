@@ -32,7 +32,8 @@ body {
 }
 
 .nav-icon {
-  background: rd;
+  padding-left: 10px;
+  color: #fff;
 }
 
 /* NAV OVERLAY */
@@ -131,7 +132,7 @@ body {
 }
 
 .col-middle {
-  background: green;
+  background: #333;
   margin: 0 5px;
 }
 
@@ -217,7 +218,7 @@ body {
 }
 
 .col-middle {
-  background: green;
+  /* background: green; */
   margin: 0 5px;
 }
 
