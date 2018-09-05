@@ -143,34 +143,37 @@ body {
 }
 
 .gallery-container {
-  background-color: aquamarine;
-  width: 90%;
+  /* width: 90%;
+  height: 80%; */
   display: flex;
   justify-content: center;
   align-items: center;
-
 
 }
 
 /* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
 .projects-col {
-  background: greenyellow;
-  align-items: center
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
 }
 
 /*  img  */
 .projects {
-  /* width: 50%; */
+  width: 100%;
 }
 
 .photography-col {
   /* width: 50%; */
-  background: red;
+  /* background: red; */
+  margin: 0 5px;
 }
 
 /*  img  */
 .photography {
-  /* width: 50%; */
+  width: 100%;
+
 }
 
 /* --------------------- */
