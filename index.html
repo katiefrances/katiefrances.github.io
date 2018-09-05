@@ -8,9 +8,6 @@
     <link rel="stylesheet" type="text/css" href="flexboxgrid.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-
-    <script src="index.js"></script>
 </head>
 <body>
 
@@ -18,80 +15,65 @@
      -- Add what I do section
      - Fix alignment of divs
     -->
-    <!-- NAV -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#about">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-
-      <!-- NAv TRIGGER -->
-      <div class="navbar">
-        <span style="font-size:30px;cursor:pointer" class="nav-icon" onclick="openNav()"><i class="fas fa-bars"></i></span>
-      </div>
-    
     <div id="wrapper">
+    <!-- NAV -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            <a href="#about">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
 
-
-      <div class="header">
-          <!-- <h1>Title</h1> -->
-      </div>
-
-    <div class="row start-lg center-xs about-row" id="about">
-        <!-- Nested grid for image -->
+        <!-- NAv TRIGGER -->
+        <div class="navbar">
+            <span style="font-size:30px;cursor:pointer" class="nav-icon" onclick="openNav()"><i class="fas fa-bars"></i></span>
+        </div>
         
-        <!-- Image -->
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 center-md end-lg center-xs image">
-            <img class="me" src="https://www.fillmurray.com/300/300"/>
-        </div>
-
-        <!-- About boxes -->
-        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
-            <div class="col-lg-offset-12 col-md-offset-1 col-sm-offset-12 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-4 about-left">
-                <div class="box">
-                    <h1 class="start-md start-xs">About</h1>
-                </div>
-            </div>
-            <div class="col-md-offset-1 col-sm-offset-12 col-xs-offset-3 col-lg-8 col-md-9 col-sm-12 col-xs-8 about-right">
-                <div class="box">
-                    <p class="start-xs about-text"> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa libero unde, corporis dolores optio? Corrupti quis impedit voluptatem veritatis.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-            <!-- What I do -->
+            <!-- HEADER -->
+            <div class="header">
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                    <li>four</li>
+                </ul>
             
-            <!-- TODO
-                - XS LAYOUT - DONE
-                - SM LAYOUT
-                - LG LAYOUT
-            -->
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-12 col-xs-offset-1 col-md-7 col-sm-3 col-xs-4 what-i-do-left">
-                    <div class="box">
-                        <h1 class="start-md start-xs">What I Do</h1>
-                    </div>
+            </div>
+
+            <div class="about">
+                <div class="col-left">
+                    <img class="me" src="https://www.fillmurray.com/500/500"/>            
                 </div>
-                <div class="col-lg-offset-12 col-md-offset-1 col-sm-offset-3 col-xs-offset-1 col-md-12 col-sm-6 col-xs-8 what-i-do-right">
-                    <div class="box">
-                        <ul class="end-xs start-sm about-text">
-                            <li>List item</li>
-                            <li>List item</li>
-                            <li>List items</li>
-                        </ul>
-                    </div>
+                <div class="col-middle">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tenetur assumenda eum ipsam libero blanditiis nemo quam sint at ducimus.</p>
+                </div>
+                <div class="col-right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tenetur assumenda eum ipsam libero blanditiis nemo quam sint at ducimus.</p>
                 </div>
             </div>
-        </div> <!-- / Inner row-->
-    </div> <!-- / WRAPPER-->
-    <!-- / FIRST ROW -->
-</div>
-</body>
+
+            <!-- GALLERY -->
+            <div class="gallery">
+                <p>GALLERY</p>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="get-in-touch">
+                GET IN TOUCH
+            </div>    
+
+        </div> <!-- / WRAPPER-->
+        
+    </div>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    </body>
 </html>
