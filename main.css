@@ -14,13 +14,11 @@ body {
     font-size: 2rem;
   }
 
-
   /* Structure */
  #wrapper {
    max-width: 100%;
-   padding-top: -55px;
+   width: 100vw;
  }
-
 
 /* NAV */
 
@@ -86,8 +84,16 @@ body {
 /* HEADER */
 
 .header {
-  background: #818181;
+
+
+
   height: 100vh;
+
+  background: #222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 -5px;
 }
 
 /* ---------------------------- */
@@ -133,9 +139,9 @@ body {
 
 /* GALLERY */
 .gallery {
-  /* height: 100vh; */
-  background: #222;
   height: 100vh;
+
+  background: #222;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -143,8 +149,9 @@ body {
 }
 
 .gallery-container {
-  /* width: 90%;
-  height: 80%; */
+  width: 90%;
+  /* height: 100%; */
+  padding-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +160,7 @@ body {
 
 /* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
 .projects-col {
-
+  height: 100vh;
   justify-content: center;
   align-items: center;
   margin: 0 5px;
@@ -161,7 +168,7 @@ body {
 
 /*  img  */
 .projects {
-  width: 100%;
+  width: 80%;
 }
 
 .photography-col {
@@ -172,13 +179,25 @@ body {
 
 /*  img  */
 .photography {
-  width: 100%;
-
+  width: 80%;
 }
 
 /* --------------------- */
 /* GET IN TOUCH */ 
 .get-in-touch {
   height: 100vh;
-  background: darkblue;
+
+  background: #222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 -5px;
+}
+
+.get-in-touch-container {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
