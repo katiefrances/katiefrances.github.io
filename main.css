@@ -4,7 +4,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-
   }
 
   ul,li {
@@ -94,9 +93,8 @@ body {
 /* ---------------------------- */
 /* ABOUT */
 
-
 .about {
-  background:red;
+  background: #333;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
@@ -115,6 +113,14 @@ body {
   margin: 0 5px;
 }
 
+/* Image */
+.image { padding: 20px; }
+
+.me  {
+  max-width: 10rem;
+  border-radius: 50%;
+}
+
 .col-middle {
   background: green;
   margin: 0 5px;
@@ -123,37 +129,53 @@ body {
 .col-right {
   background: #333;
   margin: 0 5px;
+}
+
+/* GALLERY */
+.gallery {
+  /* height: 100vh; */
+  background: #222;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 -5px;
+}
+
+.gallery-container {
+  background-color: aquamarine;
+  width: 90%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
 
 }
 
-
-/* Image */
-.image {
-  padding: 20px;
+/* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
+.projects-col {
+  background: greenyellow;
+  align-items: center
 }
 
-.me  {
-  max-width: 10rem;
-  border-radius: 50%;
+/*  img  */
+.projects {
+  /* width: 50%; */
 }
 
-/* .about-text {
-  text-align: left;
-  width: 100%;
-} */
+.photography-col {
+  /* width: 50%; */
+  background: red;
+}
 
-/* ABOUT H1 */
-/* .about-left, .start-xs h1 {
-  margin-bottom: -30px;
-  background: #fff;
-  position: relative;
-} */
+/*  img  */
+.photography {
+  /* width: 50%; */
+}
 
-/* WHAT I DO */
-
-/* .what-i-do-left, .end-xs h1 {
-  background: #fff;
-  margin-bottom: -30px;
-  position: relative;
-} */
-
+/* --------------------- */
+/* GET IN TOUCH */ 
+.get-in-touch {
+  height: 100vh;
+  background: darkblue;
+}
