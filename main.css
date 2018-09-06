@@ -3,8 +3,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  background: #000000;
   }
   
   ul,li {
@@ -51,11 +52,16 @@ body {
 }
 
 .overlay-content {
-  position: relative;
+  /* position: relative; */
   top: 25%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .overlay a {
@@ -107,12 +113,14 @@ body {
   background: #333;
   height: 100vh;
   display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 0 -5px;
 }
 
-.about-container {
+.about-inner {
   width: 70%;
   display: flex;
   padding: 10px;
@@ -127,7 +135,7 @@ body {
 .image { padding: 20px; }
 
 .me  {
-  max-width: 10rem;
+  max-width: 40%;
   border-radius: 50%;
 }
 
@@ -152,10 +160,10 @@ body {
   margin: 0 -5px;
 }
 
-.gallery-container {
+.gallery-inner {
   width: 90%;
   /* height: 100%; */
-  padding-top: 200px;
+  /* padding-top: 200px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,9 +172,9 @@ body {
 
 /* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
 .projects-col {
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+
+  /* justify-content: center;
+  align-items: center; */
   margin: 0 5px;
 }
 
@@ -176,9 +184,8 @@ body {
 }
 
 .photography-col {
-  /* width: 50%; */
-  /* background: red; */
   margin: 0 5px;
+  align-self: center
 }
 
 /*  img  */
@@ -198,7 +205,7 @@ body {
   margin: 0 -5px;
 }
 
-.skills-container {
+.skills-inner {
   width: 70%;
   display: flex;
   padding: 10px;
@@ -239,7 +246,7 @@ body {
   margin: 0 -5px;
 }
 
-.get-in-touch-container {
+.get-in-touch-inner {
   width: 50%;
   height: 80%;
   display: flex;
@@ -257,7 +264,7 @@ body {
   margin: 0 -5px;
 }
 
-.footer-container {
+.footer-inner {
   width: 60%;
   height: 80%;
   display: flex;
