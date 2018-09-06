@@ -16,6 +16,8 @@ body {
     font-size: 2rem;
   }
 
+  
+
   /* Structure */
  #wrapper {
    width: 100%;
@@ -106,6 +108,10 @@ body {
   margin: 0 -5px;
 }
 
+.header-list li {
+  font-size: 200px;
+}
+
 /* ---------------------------- */
 /* ABOUT */
 
@@ -150,7 +156,7 @@ body {
 }
 
 /* GALLERY */
-.gallery {
+.work {
   height: 100vh;
 
   background: #222;
@@ -160,7 +166,7 @@ body {
   margin: 0 -5px;
 }
 
-.gallery-inner {
+.work-inner {
   width: 90%;
   /* height: 100%; */
   /* padding-top: 200px; */

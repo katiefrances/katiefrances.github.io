@@ -26,7 +26,7 @@ function closeNav() {
 	
 	
 
-
+// Header loop
 $(document).ready(function() { 
 	var $li = $('ul li');
 
@@ -49,27 +49,11 @@ $(document).ready(function() {
 			}
 		});
 	}
-
 	myTimer=setInterval(function(){loop()},1000); //timer running every 2 seconds
-
 });
 
 // NAV HIDE / SHOW CONTENT ON CLICK
 
-<li>
-    <a class="us-nav-link" data-section="home">Home</a>
-    <a class="js-nav-link" data-section ="about">About</a>
-    <a class="js-nav-link" data-section ="contact">Contact</a>
-</li>
-
-
-<div id="about">
-    <h1>About</h1>
-</div>
-
-<div id="contact">
-    <h1>Contact</h1>
-</div>
 
 
 $('.js-nav-link').click(function(e) {
@@ -86,19 +70,3 @@ $('.js-nav-link').click(function(e) {
     $('#' + section).smoothScrollHere();
 })
 
-// 
-
-// var start = null;
-// var element = document.getElementById('SomeElementYouWantToAnimate');
-// element.style.position = 'absolute';
-
-// function step(timestamp) {
-//   if (!start) start = timestamp;
-//   var progress = timestamp - start;
-//   element.style.left = Math.min(progress / 10, 200) + 'px';
-//   if (progress < 2000) {
-//     window.requestAnimationFrame(step);
-//   }
-// }
-
-// window.requestAnimationFrame(step);
