@@ -100,6 +100,21 @@ body {
 /* ---------------------------- */
 /* HEADER */
 
+
+#anim {
+  position:absolute;
+  left:0px;
+  width:150px;
+  height:150px;
+  background: blue;
+  font-size: larger;
+  color: white;
+  border-radius: 10px;
+  padding: 1em;
+  align-content: center;
+}
+
+
 .header {
   height: 100vh;
   background: #222;
