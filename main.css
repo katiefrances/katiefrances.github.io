@@ -251,10 +251,10 @@ body {
 .grid {
   display: none;
   position:absolute;
-  /* width: 50%; */
+  width: 50%;
   height: auto;
   overflow-x: visible;
-  text-align: center;
+  /* text-align: center; */
 }
 
 
@@ -299,9 +299,6 @@ body {
 
 /* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
 .projects-col {
-
-  /* justify-content: center;
-  align-items: center; */
   margin: 0 5px;
 }
 
@@ -312,7 +309,7 @@ body {
   color: white;
 }
  
-/* Centered text */
+/* Centered text over img */
 .centered {
   position: absolute;
   top: 50%;
