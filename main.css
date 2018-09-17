@@ -305,9 +305,39 @@ body {
   margin: 0 5px;
 }
 
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+ 
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  opacity: 0.9;
+
+
+  
+}
+
+
 /*  img  */
 .projects {
   width: 80%;
+  
+}
+
+.projects-col img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  transition-duration: 5s;
+  transition-delay: 2s;
+  
 }
 
 .photography-col {
