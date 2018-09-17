@@ -14,6 +14,11 @@ function closeNav() {
 
 // Loop throgh array infinitely 
  
+const jobs = ['developer', 'designer', 'photographer'] ;
+
+jobs.forEach(jobs => {
+  return jobs++;
+});
  
 // shim layer with setTimeout fallback
 window.requestAnimFrame = (function(){
@@ -62,8 +67,6 @@ window.requestAnimFrame = (function(){
 
     // for (let i = 0; i < array.length; i++) {
     //     const element = array[i];
-
-
         
 	// }
 	
@@ -98,6 +101,7 @@ window.requestAnimFrame = (function(){
 
 
 // NAV HIDE / SHOW CONTENT ON CLICK
+// Need to replace with JQuery
 
 $('.js-nav-link').click(function(e) {
     e.preventDefault();
