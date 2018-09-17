@@ -117,3 +117,6 @@ $('.js-nav-link').click(function(e) {
     $('#' + section).smoothScrollHere();
 })
 
+// Show hide gallery content
+
+

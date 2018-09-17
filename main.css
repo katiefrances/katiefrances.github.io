@@ -140,7 +140,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 -5px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
  
 @media screen and (max-height: 450px) {
@@ -220,6 +220,7 @@ body {
 }
 
 /* What I do */
+
 .whatido-col-middle {
   background: #fff;
   z-index: 3;
@@ -244,6 +245,38 @@ body {
 }
 
 /* GALLERY */
+
+/* Show on hover content */
+
+.grid {
+  display: none;
+  position:absolute;
+  /* width: 50%; */
+  height: auto;
+  overflow-x: visible;
+  text-align: center;
+}
+
+
+
+#trigger:checked + .grid {
+  display: block;
+}
+
+#trigger {
+    display: none;
+    
+  }
+
+  #trigger img {
+    /* max-width: 30%; */
+  }
+
+.content-lower {
+  overflow: auto;
+  background: red;
+}
+
 .work {
   height: 100vh;
 
@@ -255,7 +288,7 @@ body {
 }
 
 .work-inner {
-  width: 90%;
+  /* width: 90%; */
   /* height: 100%; */
   /* padding-top: 200px; */
   display: flex;

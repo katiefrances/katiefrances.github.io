@@ -6,6 +6,8 @@
     <title>Katie Frances</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" src="css-reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
@@ -47,12 +49,7 @@
 
             <div class="header" id="home">
 
-<<<<<<< HEAD
-                    
-
-=======
                     <div id="anim"><h1>Header</h1></div> 
->>>>>>> header-animatiom
 
                 <!-- FIX SLIDESHOW THING -->
                 <!-- <ul class="header-list">
@@ -78,7 +75,7 @@
     
         <div class="colums-container">
             <!-- About me -->
-            <div class="about-col-left">
+            <div class="about-col-left col">
                 <img class="me" src="https://www.fillmurray.com/500/500"/>            
              </div>
             <div class="about-col-middle">
@@ -99,12 +96,37 @@
     </div>
 
 
+	<!-- <div class="content-above">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis velit laboriosam, illo cumque maxime soluta quibusdam similique nihil perspiciatis atque, accusantium modi maiores itaque! Consequatur libero placeat amet adipisci fuga!
+        </div> -->
+        <!--  Hide show content  -->
+    
+
     <!-- GALLERY -->
     <div class="work" id="work">
         <div class="work-inner">
             <div class="projects-col">
-                <img class="projects" src="https://www.fillmurray.com/500/500"/>            
+                
+                <!-- Need to have option to toggle image as dropdown -->
+                <!-- <img class="projects" src="https://www.fillmurray.com/500/500"/>    -->
+            <label for="trigger">            
+                <img class="projects" src="https://www.fillmurray.com/500/500"/>
+             </label>
+    
+        <input id="trigger" type="checkbox"> 
+                <div class="grid animated fadeIn">
+                        <img src="https://www.fillmurray.com/100/100"/>
+                        <img src="https://www.fillmurray.com/100/100"/>
+                        <img src="https://www.fillmurray.com/100/100"/>
+                        <img src="https://www.fillmurray.com/100/100"/>
+                    </div>      
             </div>
+
+            <!-- <div class="content-lower">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint qui neque velit, commodi assumenda saepe quidem accusamus fuga suscipit alias sapiente eos amet ducimus sequi distinctio quod, incidunt, unde enim!
+
+            </div> -->
+
 
             <div class="photography-col">
                 <img  class="photography" src="https://www.fillmurray.com/500/500"/>                       
