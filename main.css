@@ -17,7 +17,7 @@ body {
     font-size: 2rem;
   }
 
-  
+
 
   /* Structure */
  #wrapper {
@@ -312,7 +312,8 @@ body {
 
 .photography-col {
   margin: 0 5px;
-  align-self: center
+  align-self: center;
+  margin-top: -10rem;
 }
 
 /*  img  */
