@@ -100,6 +100,21 @@ body {
 /* ---------------------------- */
 /* HEADER */
 
+
+#anim {
+  position:absolute;
+  left:0px;
+  width:150px;
+  height:150px;
+  background: blue;
+  font-size: larger;
+  color: white;
+  border-radius: 10px;
+  padding: 1em;
+  align-content: center;
+}
+
+
 .header {
   height: 100vh;
   background: #222;
@@ -118,7 +133,7 @@ body {
 
 
 .about {
-  background: darkgray;
+  background: #ffffff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -128,6 +143,13 @@ body {
   overflow: hidden;
 }
  
+@media screen and (max-height: 450px) {
+  .about {overflow-y: auto;}
+  .about a {font-size: 20px}
+  .about {
+    max-width: 100%;
+  }
+}
 
 .colums-container {
   display: block;
@@ -137,6 +159,17 @@ body {
   /* width: 100vw; */
   /* height:100%; */
 }
+
+/* media queries for column breakdown */
+@media screen and (max-height: 450px) {
+  .colums-container {overflow-y: auto;}
+  .colums-container a {font-size: 20px}
+  .colums-container {
+    max-width: 100%;
+  }
+}
+
+
 
 /* image */
 .about-col-left {
@@ -164,7 +197,7 @@ body {
 }
 
 .about-col-right {
-  background:red;
+  /* background:red; */
   /* z-index: 0; */
   position: relative;
   margin-left: 50px;
@@ -199,7 +232,7 @@ body {
 
 
 .whatido-col-right {
-  background:red;
+  /* background:red; */
   /* z-index: 0; */
   position: relative;
   margin-right: -10%;
