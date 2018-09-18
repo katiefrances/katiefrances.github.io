@@ -360,11 +360,11 @@ body {
 
 /* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
 .projects-col {
-  background: red;
+  /* background: red; */
 }
 
 .photography-col {
-  background: yellow;
+  /* background: yellow; */
   /* align-self: flex-end; */
 }
 
@@ -390,34 +390,31 @@ body {
   background: #333;
   height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .skills-inner {
   width: 70%;
   display: flex;
   padding: 10px;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 320px) {
+  .skills-inner {
+    /* width: 100%; */
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
 }
 
 .skills-left {
   background: #222;
-
 }
 
-
-
-
-
-.col-middle {
-  /* background: green; */
-
-}
-
-.col-right {
-  background: #333;
-
-}
 
 
 /* --------------------- */
@@ -426,50 +423,67 @@ body {
   height: 80vh;
   background: #444;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .get-in-touch-inner {
-  width: 50%;
-  height: 80%;
+  /* height: 80%; */
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
+
+
+.get-in-touch-col-middle {
+  background: green;
+  align-self: center;
+  width: 100%;
+}
+
+@media screen and (max-width:320px) {
+  .get-in-touch-col-right {
+
+  }
+}
+
 
 /* FOOTER */
 .footer {
   height: 80vh;
   background: #555;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .footer-inner {
-  width: 60%;
+  width: 70%;
   height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-.col-middle {
-  background: darkgray;
-
+@media screen and (max-width: 320px) {
+  .footer-inner {
+    /* width: 80%; */
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rebeccapurple
+  }
 }
 
-.col-right {
-  background: #333;
+.footer-col-left {
 
-  margin-left: -20px;
 }
+ 
