@@ -158,7 +158,7 @@ body {
   .about a {font-size: 20px}
   .about {
     min-width: 100%;
-    background:lightcoral;
+    background:#fff;
     /* padding: 4%; */
   }
 }
@@ -181,7 +181,7 @@ body {
 /* image */
 .about-col-left {
   text-align: left;
-  background-color: #111;
+  /* background-color: #111; */
   position: relative;
 
 }
