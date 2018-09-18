@@ -125,7 +125,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 -5px;
+
 }
 
 .header-list li {
@@ -286,7 +286,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 -5px;
+
 }
 
 .work-inner {
