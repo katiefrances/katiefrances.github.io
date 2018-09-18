@@ -6,15 +6,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Monsterrat');
 
 html {
-  background: #555;
+  /* background: #fff; */
   margin: 0 auto;
   border: none;
+  
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  background-color: orange;
+  background-color: #222;
 
   }
   
@@ -140,7 +141,7 @@ body {
 
 /* Main div */
 .about {
-  /* background-color: black; */
+  background-color: #fff;
   height: 100% 100vh;
   display: flex;
   justify-content: center;
