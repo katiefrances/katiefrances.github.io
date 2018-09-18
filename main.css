@@ -3,7 +3,7 @@
   border:
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Monsterrat');
 
 html {
   background: #555;
@@ -24,6 +24,7 @@ body {
 
   h1 {
     font-size: 2rem;
+    font-family: 'Monsterrat', sans-serif;
   }
 
 
@@ -151,6 +152,18 @@ body {
   justify-content: center;
   align-items: center;
 
+}
+
+.about-div-titles h1 {
+  font-size: 2rem;
+  font-family: 'Monsterrat', sans-serif;
+}
+
+@media screen and (max-width: 320px) {
+  .about-div-titles {
+    font-size: 2rem;
+  }
+   
 }
  
 @media screen and (max-width: 320px) {
@@ -286,7 +299,7 @@ body {
     background: aqua;
     z-index: 3;
     position: relative;
-    max-width: 50%;
+    width: 100%;
     padding: 0px;
     margin-left: 40%;
     
@@ -324,26 +337,6 @@ body {
 
 /* Show on hover content */
 
-.grid {
-  display: none;
-  position:absolute;
-  width: 50%;
-  height: auto;
-  overflow-x: visible;
-  /* text-align: center; */
-}
-
-
-
-#trigger:checked + .grid {
-  display: block;
-}
-
-#trigger {
-    display: none;
-    
-  }
-
 
 .work {
   height: 100%;
@@ -362,6 +355,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 
 /* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
