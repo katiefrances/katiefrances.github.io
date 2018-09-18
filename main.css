@@ -22,19 +22,16 @@ body {
     list-style-type: none;
   }
 
+  p {
+    text-align: left;
+  }
+
   h1 {
     font-size: 2rem;
     font-family: 'Monsterrat', sans-serif;
   }
 
 
-
-  /* Structure */
- #wrapper {
-   width: 100%;
-   background-color: aqua;
- 
- }
 
  /* ---------------------------- */
 /* NAV */
@@ -145,10 +142,7 @@ body {
 .about {
   /* background-color: black; */
   height: 100% 100vh;
-
-  /* width: 100%; */
   display: flex;
- 
   justify-content: center;
   align-items: center;
 
@@ -163,7 +157,6 @@ body {
   .about-div-titles {
     font-size: 2rem;
   }
-   
 }
  
 @media screen and (max-width: 320px) {
@@ -209,7 +202,7 @@ body {
   .about-col-left {
     text-align: center;
     /* align-self: center; */
-    
+
     height: 100%;
     /* background-color: aquamarine; */
 
@@ -247,15 +240,18 @@ body {
 
 }
 
+ /* Heading */
 @media screen and (max-width: 320px) {
   .about-col-middle {
     background:lightseagreen;
     z-index: 3;
     position: relative;
-    max-width: 50%;
+    max-width: 35%;
     padding: 0%;
+    padding-left: 2%;
     margin-left: 10%;
     margin-top: 10%;
+
   }
 }
 
@@ -270,9 +266,10 @@ body {
   padding: 1%;
 }
 
+/* Body text */
 @media screen and (max-width: 320px) {
   .about-col-right {
-    background:darkcyan;
+    background:white;
     z-index: 2;
     position: relative;
     max-width: 90%;
@@ -284,7 +281,6 @@ body {
 
 
 /* What I do */
-
 .whatido-col-middle {
   background: #fff;
   z-index: 3;
@@ -296,7 +292,7 @@ body {
 
 @media screen and (max-width: 320px) {
   .whatido-col-middle {
-    background: aqua;
+    background-color: lightseagreen;
     z-index: 3;
     position: relative;
     width: 100%;
@@ -306,6 +302,7 @@ body {
   }
 }
 
+/* Body text */
 .whatido-col-right {
   background:red;
   z-index: 0;
@@ -320,7 +317,7 @@ body {
 
 @media screen and (max-width: 320px) {
   .whatido-col-right {
-    background-color: greenyellow;
+    background-color: #fff;
     z-index: 0;
     position: relative;
     margin-left: 15%;
@@ -413,6 +410,12 @@ body {
 
 .skills-left {
   background: #222;
+  padding: 5%;
+}
+
+.skils-right {
+  background: #22;
+  padding: 5%;
 }
 
 
@@ -435,19 +438,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 
-
 .get-in-touch-col-middle {
-  background: green;
   align-self: center;
+  text-align: center;
   width: 100%;
 }
 
 @media screen and (max-width:320px) {
   .get-in-touch-col-right {
-
+    background-color: #222;
+    padding: 5%;
   }
 }
 
@@ -479,11 +483,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rebeccapurple
   }
 }
 
 .footer-col-left {
+  background: #222;
+  padding: 5%;
+}
 
+.footer-col-right {
+  background: #444;
+  padding: 5%;
 }
  
