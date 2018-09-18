@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border:
+  /* border: */
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto|Monsterrat');
@@ -16,7 +16,6 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   background-color: #222;
-
   }
   
   ul,li {
@@ -31,7 +30,6 @@ body {
     font-size: 2rem;
     font-family: 'Monsterrat', sans-serif;
   }
-
 
 
  /* ---------------------------- */
@@ -68,7 +66,6 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 30px;
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,7 +103,7 @@ body {
 }
 
 /* ---------------------------- */
-/* HEADER */
+/* Header */
 
 
 #anim {
@@ -137,7 +134,7 @@ body {
 }
 
 /* ---------------------------- */
-/* ABOUT */
+/* About */
 
 /* Main div */
 .about {
@@ -231,8 +228,6 @@ body {
   }
 }
 
-
-
 /* Body text for About*/
 .about-col-right {
   background:lightseagreen;
@@ -259,7 +254,7 @@ body {
 
 
 /* What I do */
-/* --------------------------------- */
+/* ---------------------------- */
 
 /* Headings */
 .whatido-col-middle {
@@ -310,7 +305,7 @@ body {
   }
 }
 
-
+/* ---------------------------- */
 /* GALLERY */
 
 
@@ -360,8 +355,9 @@ body {
 }
 
 
-
+/* ---------------------------- */
 /* SKILLS */
+
 .skills {
   background: #333;
   height: 100vh;
@@ -393,13 +389,12 @@ body {
 }
 
 .skils-right {
-  background: #22;
+  background: #222;
   padding: 5%;
 }
 
 
-
-/* --------------------- */
+/* ---------------------------- */
 /* GET IN TOUCH */ 
 .get-in-touch {
   height: 80vh;
@@ -411,15 +406,12 @@ body {
 }
 
 .get-in-touch-inner {
-  /* height: 80%; */
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
-
 
 .get-in-touch-col-middle {
   align-self: center;
@@ -434,7 +426,7 @@ body {
   }
 }
 
-
+/* ---------------------------- */
 /* FOOTER */
 .footer {
   height: 80vh;
