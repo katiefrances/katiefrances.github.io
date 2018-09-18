@@ -142,7 +142,7 @@ body {
 
 
 .about {
-  background-color: black;
+  /* background-color: black; */
   height: 100% 100vh;
 
   /* width: 100%; */
@@ -173,7 +173,6 @@ body {
 
 @media screen and (max-width: 320px) {
   .columns-container {
-    background: olive;
      flex-direction: column;
      padding: 2%;
   }
@@ -197,8 +196,9 @@ body {
   .about-col-left {
     text-align: center;
     /* align-self: center; */
+    
     height: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
   }
   .about-col-left img {
@@ -236,11 +236,11 @@ body {
 
 @media screen and (max-width: 320px) {
   .about-col-middle {
-    background:darkcyan;
+    background:lightseagreen;
     z-index: 3;
     position: relative;
     max-width: 50%;
-    /* padding: 1%; */
+    padding: 0%;
     margin-left: 10%;
     margin-top: 10%;
   }
@@ -254,7 +254,7 @@ body {
   margin-top: -40px;
   height: 30%; 
   max-width: 50%;
-  padding: 20px;
+  padding: 1%;
 }
 
 @media screen and (max-width: 320px) {
@@ -263,24 +263,12 @@ body {
     z-index: 2;
     position: relative;
     max-width: 90%;
-    padding: 1%;
+    /* padding: 1%; */
     margin-right: 10%;
-    margin-top: -5%;
+    margin-top: -10%;
   }
 }
 
-
-
-.col-middle {
-  background: darkgray;
-
-}
-
-.col-right {
-  background: #333;
-
-  margin-left: -20px;
-}
 
 /* What I do */
 
@@ -289,7 +277,6 @@ body {
   z-index: 3;
   position: relative;
   max-width: 50%;
-  padding: 0px;
   margin-left: 60%;
   
 }
@@ -323,11 +310,12 @@ body {
     background-color: greenyellow;
     z-index: 0;
     position: relative;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: -10%;
+    margin-bottom: 10%;
     height: 40%; 
     width: 70%;
-    padding: 20px;
+    padding: 1%;
     /* max-width: 30%; */
   }
 }
@@ -471,4 +459,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.col-middle {
+  background: darkgray;
+
+}
+
+.col-right {
+  background: #333;
+
+  margin-left: -20px;
 }
