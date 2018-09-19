@@ -424,7 +424,7 @@ body {
     z-index: 2;
     position: relative;
     max-width: 70%;
-    padding: 1%;
+    padding: 5%;
     margin-right: 10%;
     margin-left: 15%;
     margin-top: -10%;
@@ -438,7 +438,7 @@ body {
     z-index: 2;
     position: relative;
     max-width: 70%;
-    padding: 1%;
+    padding: 5%;
     margin-right: 10%;
     margin-left: 15%;
     margin-top: -10%;
@@ -531,7 +531,6 @@ body {
     width: 100%;
     padding: 0px;
     margin-left: 40%;
-    
   }
 }
 
@@ -565,7 +564,7 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 480px){
   .whatido-col-right {
-    background-color: aliceblue;
+    background-color: green;
     z-index: 0;
     position: relative;
     margin-left: 15%;
@@ -573,13 +572,28 @@ body {
     margin-bottom: 10%;
     height: 40%; 
     width: 70%;
-    padding: 1%;
+    padding: 5%;
     /* max-width: 30%; */
   }
 }
 
 
 @media screen and (min-width: 480px) and (max-width: 576px) {
+  .whatido-col-right {
+    background-color: greenyellow;
+    z-index: 0;
+    position: relative;
+    margin-left: 15%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    height: 40%; 
+    width: 70%;
+    padding: 5%;
+    /* max-width: 30%; */
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .whatido-col-right {
     background-color: aliceblue;
     z-index: 0;
@@ -590,11 +604,8 @@ body {
     height: 40%; 
     width: 70%;
     padding: 1%;
-    /* max-width: 30%; */
   }
 }
-
-
 
 /* ---------------------------- */
 /* GALLERY */
