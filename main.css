@@ -136,20 +136,6 @@ body {
 /* ---------------------------- */
 /* About */
 
-/* Common viewports */
-
-/* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) { ... } */
-/* 
-// Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { ... } */
-
-/* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */
-
-/* // Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { ... } */
-
 
 /* M E D I A  Q U E R I E S  F O R  A B O U T  C O N T A I N E R * /
 /* ------------------------------------------------------------------ */
@@ -230,26 +216,6 @@ body {
 /* M E D I A  Q U E R I E S  F O R  I M A G E  D I V */
 /* ------------------------------------------------------------------ */
 
-/* Image column */
-.about-col-left {
-  text-align: center;
-  position: relative;
-}
-
-.about-col-left img {
-  align-self: center;
-  max-width: 40%;
-  border-radius: 50%;
-}
-
-/*  Desktop Image */
-/* @media all and (min-width: 501px) {
-  .about-col-left {
-    background-image:url('katie-img2.png');
-    width:200px;height:75px;
-  }
-} */
-
 
 /* For small viewports - Phone */
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -272,8 +238,6 @@ body {
     text-align: center;
     height: 100%;
     max-width: 100%;    
-    background: yellowgreen;;
-
   }
 
   .about-col-left img {
@@ -289,7 +253,6 @@ body {
     text-align: center;
     height: 100%;
     max-width: 100%;
-    background: blueviolet;
   }
 
   .about-col-left img {
@@ -299,24 +262,52 @@ body {
   }
 }
 
+/* Large Viewports - Desktop  */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .about-col-left {
+    text-align: center;
+    position: relative;
+    background: #111;
+  }
+  
+  .about-col-left img {
+    align-self: center;
+    max-width: 40%;
+    border-radius: 50%;
+  }
+}
 
-/* M E D I A  Q U E R I E S  F O R  H E A D I N G S  D I V */
+
+/* M E D I A  Q U E R I E S  F O R  A B O U T  H E A D I N G S  D I V */
 /* ------------------------------------------------------------------ */
 
 /* About Heading */
-.about-col-middle {
+/* .about-col-middle {
   background: #fff;
   z-index: 3;
   position: relative;
   max-width: 50%;
   padding: 1%;
 
-}
+} */
 
 /* Small Viewports - Phone */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-col-middle {
     background:lightseagreen;
+    z-index: 3;
+    position: relative;
+    max-width: 35%;
+    padding: 0%;
+    padding-left: 2%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .about-col-middle {
+    background:aqua;
     z-index: 3;
     position: relative;
     max-width: 35%;
