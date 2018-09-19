@@ -190,7 +190,7 @@ body {
   flex-direction: column;
 }
 
-/* small viewports */
+/* Small viewports - Phones */
 @media screen and (min-width: 320px) and (max-width: 480px)  {
   .columns-container {
      flex-direction: column;
@@ -198,21 +198,24 @@ body {
   }
 }
 
-/* @media screen and (min-width: 480px) and (max-width: 1024px) {
-  .columns-container {
-    flex-direction: column;
-    padding: 2%;
- }
-} */
-
-/* Medium */
-
+/* Medium viewports - tablets */
 @media (min-width: 768px) {
   .columns-container {
+    display: block;
     background: red;
     flex-direction: column;
     padding: 2%;
- }
+    max-width: 100%;
+  }
+}
+
+/* Large - Desktops */ 
+@media (max-width:992px) {
+  .columns-container {
+    display: block;
+    background: yellow;
+    max-width: 50%;
+  }
 }
 
 /* Image column */
