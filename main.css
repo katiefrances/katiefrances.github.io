@@ -143,15 +143,22 @@ body {
 /* Main div */
 .about {
   background-color: #fff;
-  height: 100% 100vh;
+  height: 100vh 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-with: 320px) and (max-width: 567px) {
   .about {overflow-y: auto;}
-  .about a {font-size: 20px}
+  .about {
+    min-width: 100%;
+    background:#fff;
+  }
+}
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+  .about {overflow-y: auto;}
   .about {
     min-width: 100%;
     background:#fff;
@@ -188,25 +195,48 @@ body {
   .columns-container {
      flex-direction: column;
      padding: 2%;
-     display: block
+     display: block;
+     max-width: 100%;
   }
 }
 
-/* Medium viewports - tablets */
-@media (min-width: 768px) {
+@media screen and (min-width: 480) and (min-width: 576px)  {
   .columns-container {
     display: block;
-    background: red;
+    background: orange;
     flex-direction: column;
     padding: 2%;
     max-width: 100%;
   }
 }
 
+/* Medium viewports - tablets */
+@media screen and (min-width: 576px)  {
+  .columns-container {
+    display: block;
+    background: orange;
+    flex-direction: column;
+    padding: 2%;
+    max-width: 80%;
+  }
+}
+
+/* @media (min-width: 480px)  {
+  .columns-container {
+    display: block;
+    background: red;
+    flex-direction: column;
+    padding: 2%;
+    max-width: 80%;
+  }
+} */
+
+
 /* Large - Desktops */ 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .columns-container {
     display: block;
+    flex-direction: column;
     background: yellow;
     max-width: 60%;
   }
@@ -233,7 +263,7 @@ body {
 }
 
 /* Medium Viewports - Tablet */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 480px) and (max-width: 576px) {
   .about-col-left {
     text-align: center;
     height: 100%;
@@ -248,7 +278,23 @@ body {
 }
 
 /* Medium Viewports - Tablet */
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 567px) and (max-width: 768px) {
+  .about-col-left {
+    text-align: center;
+    height: 100%;
+    max-width: 100%;    
+  }
+
+  .about-col-left img {
+    text-align: center;
+    max-width: 40%;
+    border-radius: 50%;
+  }
+}
+
+
+/* Medium Viewports - Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .about-col-left {
     text-align: center;
     height: 100%;
@@ -291,10 +337,10 @@ body {
 
 } */
 
-/* Small Viewports - Phone */
+/* XS Viewports - Phone */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-col-middle {
-    background:lightseagreen;
+    background:yellow;
     z-index: 3;
     position: relative;
     max-width: 35%;
@@ -305,9 +351,10 @@ body {
   }
 }
 
-@media screen and (min-width: 576px) {
+/* SM - Larger phones */
+@media screen and (min-width: 480px) and (max-width: 567px)  {
   .about-col-middle {
-    background:aqua;
+    background: yellow;
     z-index: 3;
     position: relative;
     max-width: 35%;
@@ -318,21 +365,50 @@ body {
   }
 }
 
-/* Medium Viewports - Tablet */
+/* Medium sm */
+@media screen and (min-width: 567px) and (max-width: 768px)  {
+  .about-col-middle {
+    background: yellow;
+    z-index: 3;
+    position: relative;
+    max-width: 35%;
+    padding: 0%;
+    padding-left: 2%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+}
+
+/* Medium md */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .about-col-middle {
     display: block;
     background: #333;
     max-width: 40%;
+
+    z-index: 3;
+    position: relative;
+    max-width: 35%;
+    padding: 0%;
+    padding-left: 2%;
+    margin-left: 10%;
+    margin-top: 10%;
   }
 }
 
 /* Large Viewports - Desktop */
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .about-col-middle {
     display: block;
     background: green;
-    max-width: 100%;
+    /* max-width: 100%; */
+    z-index: 3;
+    position: relative;
+    max-width: 35%;
+    padding: 0%;
+    padding-left: 2%;
+    margin-left: 10%;
+    margin-top: 10%;
   }
 }
 
@@ -340,20 +416,64 @@ body {
 /* ------------------------------------------------------------------ */
 
 /* Body text for About*/
-.about-col-right {
-  background:lightseagreen;
-  z-index: 0;
-  position: relative;
-  margin-left: 50px;
-  margin-top: -40px;
-  height: 30%; 
-  max-width: 50%;
-  padding: 1%;
-}
 
+/* Small Viewports - Phones */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-col-right {
-    background:white;
+    background: aqua;
+    z-index: 2;
+    position: relative;
+    max-width: 70%;
+    padding: 1%;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: -10%;
+  }
+}
+
+/*  Medium VIewports - Tablet */
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .about-col-right {
+    background: aqua;
+    z-index: 2;
+    position: relative;
+    max-width: 70%;
+    padding: 1%;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: -10%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+  .about-col-right {
+    background:orange;
+    z-index: 2;
+    position: relative;
+    max-width: 90%;
+    /* padding: 1%; */
+    margin-right: 10%;
+    margin-top: -10%;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .about-col-right {
+    background:red;
+    z-index: 2;
+    position: relative;
+    max-width: 90%;
+    /* padding: 1%; */
+    margin-right: 10%;
+    margin-top: -10%;
+  }
+}
+
+/* Large Viewports - Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .about-col-right {
+    background:yellow;
     z-index: 2;
     position: relative;
     max-width: 90%;
@@ -368,14 +488,15 @@ body {
 /* ------------------------------------------------------------------ */
 
 .whatido-col-middle {
-  background: #fff;
+  background: magenta;
   z-index: 3;
   position: relative;
   max-width: 50%;
   margin-left: 60%;
-  
+  text-align: end;
 }
 
+/* Small Viewports - Phones */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .whatido-col-middle {
     background-color: lightseagreen;
@@ -387,6 +508,45 @@ body {
     
   }
 }
+
+/* Medium Viewport - Tablets */
+@media screen and (min-width:480px) and (max-width: 576px) {
+  .whatido-col-middle {
+    background-color: lightseagreen;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin-left: 40%;
+    
+  }
+}
+
+/* Large Viewport - Desktop */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .whatido-col-middle {
+    background-color: lightseagreen;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin-left: 40%;
+    
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px)  {
+  .whatido-col-middle {
+    background-color: green;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin-left: 40%;
+    
+  }
+}
+
 
 /* M E D I A  Q U E R I E S  F O R  W H A T  I  D O  B O D Y  T E X T  D I V */
 /* ------------------------------------------------------------------ */
@@ -405,7 +565,7 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 480px){
   .whatido-col-right {
-    background-color: #fff;
+    background-color: aliceblue;
     z-index: 0;
     position: relative;
     margin-left: 15%;
@@ -419,8 +579,20 @@ body {
 }
 
 
-
-
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .whatido-col-right {
+    background-color: aliceblue;
+    z-index: 0;
+    position: relative;
+    margin-left: 15%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    height: 40%; 
+    width: 70%;
+    padding: 1%;
+    /* max-width: 30%; */
+  }
+}
 
 
 
