@@ -151,6 +151,8 @@ body {
 /* @media (min-width: 1200px) { ... } */
 
 
+/* M E D I A  Q U E R I E S  F O R  A B O U T  C O N T A I N E R * /
+/* ------------------------------------------------------------------ */
 
 /* Main div */
 .about {
@@ -182,6 +184,10 @@ body {
   }
 }
 
+
+/* M E D I A  Q U E R I E S  F O R  C O L U M N S - C O N T A I N E R * /
+/* ------------------------------------------------------------------ */
+
 /* Container for columns */
 .columns-container {
   display: block;
@@ -190,11 +196,13 @@ body {
   flex-direction: column;
 }
 
+
 /* Small viewports - Phones */
 @media screen and (min-width: 320px) and (max-width: 480px)  {
   .columns-container {
      flex-direction: column;
      padding: 2%;
+     display: block
   }
 }
 
@@ -210,37 +218,90 @@ body {
 }
 
 /* Large - Desktops */ 
-@media (max-width:992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .columns-container {
     display: block;
     background: yellow;
-    max-width: 50%;
+    max-width: 60%;
   }
 }
 
+
+/* M E D I A  Q U E R I E S  F O R  I M A G E  D I V */
+/* ------------------------------------------------------------------ */
+
 /* Image column */
 .about-col-left {
-  text-align: left;
+  text-align: center;
   position: relative;
 }
 
 .about-col-left img {
   align-self: center;
   max-width: 40%;
+  border-radius: 50%;
 }
 
-/* For aligning image on iphone 5 viewport to stack with the other divs */
+/*  Desktop Image */
+/* @media all and (min-width: 501px) {
+  .about-col-left {
+    background-image:url('katie-img2.png');
+    width:200px;height:75px;
+  }
+} */
+
+
+/* For small viewports - Phone */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-col-left {
     text-align: center;
     height: 100%;
+    max-width: 100%;
   }
 
   .about-col-left img {
-    text-align: left;
-    width: 100%;
-  } 
+    text-align: center;
+    max-width: 40%;
+    border-radius: 50%;
+  }
 }
+
+/* Medium Viewports - Tablet */
+@media screen and (min-width: 576px) {
+  .about-col-left {
+    text-align: center;
+    height: 100%;
+    max-width: 100%;    
+    background: yellowgreen;;
+
+  }
+
+  .about-col-left img {
+    text-align: center;
+    max-width: 40%;
+    border-radius: 50%;
+  }
+}
+
+/* Medium Viewports - Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .about-col-left {
+    text-align: center;
+    height: 100%;
+    max-width: 100%;
+    background: blueviolet;
+  }
+
+  .about-col-left img {
+    text-align: center;
+    max-width: 40%;
+    border-radius: 50%;
+  }
+}
+
+
+/* M E D I A  Q U E R I E S  F O R  H E A D I N G S  D I V */
+/* ------------------------------------------------------------------ */
 
 /* About Heading */
 .about-col-middle {
@@ -252,6 +313,7 @@ body {
 
 }
 
+/* Small Viewports - Phone */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-col-middle {
     background:lightseagreen;
@@ -264,6 +326,27 @@ body {
     margin-top: 10%;
   }
 }
+
+/* Medium Viewports - Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .about-col-middle {
+    display: block;
+    background: #333;
+    max-width: 40%;
+  }
+}
+
+/* Large Viewports - Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .about-col-middle {
+    display: block;
+    background: green;
+    max-width: 100%;
+  }
+}
+
+/* M E D I A  Q U E R I E S  F O R  A B O U T  T E X T  D I V */
+/* ------------------------------------------------------------------ */
 
 /* Body text for About*/
 .about-col-right {
@@ -290,10 +373,9 @@ body {
 }
 
 
-/* What I do */
-/* ---------------------------- */
+/* M E D I A  Q U E R I E S  F O R  W H A T  I  D O   H E A D I N G S   D I V */
+/* ------------------------------------------------------------------ */
 
-/* Headings */
 .whatido-col-middle {
   background: #fff;
   z-index: 3;
@@ -314,6 +396,9 @@ body {
     
   }
 }
+
+/* M E D I A  Q U E R I E S  F O R  W H A T  I  D O  B O D Y  T E X T  D I V */
+/* ------------------------------------------------------------------ */
 
 /* Body text */
 .whatido-col-right {
@@ -341,6 +426,12 @@ body {
     /* max-width: 30%; */
   }
 }
+
+
+
+
+
+
 
 /* ---------------------------- */
 /* GALLERY */
