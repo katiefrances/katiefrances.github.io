@@ -136,6 +136,22 @@ body {
 /* ---------------------------- */
 /* About */
 
+/* Common viewports */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+/* 
+// Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+
+
 /* Main div */
 .about {
   background-color: #fff;
@@ -174,11 +190,29 @@ body {
   flex-direction: column;
 }
 
-@media screen and (max-width: 320px) {
+/* small viewports */
+@media screen and (min-width: 320px) and (max-width: 480px)  {
   .columns-container {
      flex-direction: column;
      padding: 2%;
   }
+}
+
+/* @media screen and (min-width: 480px) and (max-width: 1024px) {
+  .columns-container {
+    flex-direction: column;
+    padding: 2%;
+ }
+} */
+
+/* Medium */
+
+@media (min-width: 768px) {
+  .columns-container {
+    background: red;
+    flex-direction: column;
+    padding: 2%;
+ }
 }
 
 /* Image column */
