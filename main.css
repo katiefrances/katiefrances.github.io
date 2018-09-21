@@ -226,7 +226,7 @@ body {
   .columns-container {
     display: block;
     flex-direction: column;
-    background: yellow;
+    background: #fff;
     max-width: 60%;
   }
 }
@@ -240,7 +240,6 @@ body {
   height: 100%;
   max-width: 100%;
 }
-
 
 .about-col-left img {
   text-align: center;
@@ -456,7 +455,18 @@ body {
   }
 }
 
-@media screen and (min-width: )
+@media screen and (min-width: 567px) and (max-width: 768px) {
+  .about-col-right {
+    background:orchid;
+    z-index: 2;
+    position: relative;
+    max-width: 70%;
+    padding: 5%;
+    margin-right: 0%;
+    margin-left: 15%;
+    margin-top: -5%;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px){
   .about-col-right {
@@ -588,7 +598,7 @@ body {
     margin-top: -10%;
     margin-bottom: 10%;
     height: 40%; 
-    width: 70%;
+    max-width: 70%;
     padding: 5%;
     /* max-width: 30%; */
   }
@@ -596,14 +606,28 @@ body {
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .whatido-col-right {
-    background-color: orange;
+    background-color: green;
     z-index: 0;
     position: relative;
     margin-left: 15%;
     margin-top: -8%;
     margin-bottom: 10%;
     height: 40%; 
-    max-width: width 60%;
+    max-width: 100%;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .whatido-col-right {
+    background-color: olive;
+    z-index: 0;
+    position: relative;
+    margin-left: 15%;
+    margin-top: -8%;
+    margin-bottom: 10%;
+    height: 40%; 
+    /* max-width: 100%; */
     padding: 5%;
   }
 }
@@ -618,7 +642,7 @@ body {
     margin-bottom: 10%;
     height: 40%; 
     width: 70%;
-    padding: 1%;
+    padding: 5%;
   }
 }
 
