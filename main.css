@@ -490,9 +490,9 @@ body {
     background-color: lightseagreen;
     z-index: 3;
     position: relative;
-    max-width: 100%;
+    max-width: 50%;
     padding: 0px;
-    margin-left: 40%;
+    margin-left: 38%;
     
   }
 }
