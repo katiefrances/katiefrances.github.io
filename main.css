@@ -473,9 +473,8 @@ body {
     background:red;
     z-index: 2;
     position: relative;
-    max-width: 90%;
-    /* padding: 1%; */
-    margin-right: 10%;
+    max-width: 100%!important;
+    padding: 5%;
     margin-top: -10%;
   }
 }
@@ -623,11 +622,11 @@ body {
     background-color: olive;
     z-index: 0;
     position: relative;
-    margin-left: 15%;
+    margin-right:50%;
     margin-top: -8%;
     margin-bottom: 10%;
     height: 40%; 
-    /* max-width: 100%; */
+    width: 100% !important;
     padding: 5%;
   }
 }
