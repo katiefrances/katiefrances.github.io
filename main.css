@@ -33,11 +33,11 @@ body {
 
 
   /* Wrapper only for max-width of layout */
-  #wrapper {
+  /* #wrapper {
     max-width: 992px;
 
   }
-  
+   */
 
 
  /* ---------------------------- */
@@ -177,6 +177,7 @@ body {
 .about-div-titles h1 {
   font-size: 2rem;
   font-family: 'Monsterrat', sans-serif;
+  text-align: center;
 }
 
 /* @media screen and (max-width: 320px) {
@@ -246,8 +247,18 @@ body {
   .columns-container {
     display: block;
     flex-direction: column;
-    background: red;
+    background: #fff;
     max-width: 45%;
+  }
+}
+
+/* Large Viewports - Desktop  */
+@media screen and (min-width: 1200px) {
+  .columns-container {
+    display: block;
+    flex-direction: column;
+    background: red;
+    max-width: 30%;
   }
 }
 
@@ -429,6 +440,23 @@ body {
   }
 }
 
+/* Large Viewports - Desktop */
+@media screen and (min-width: 1200px) {
+  .about-col-middle {
+    display: block;
+    background: green;
+    /* max-width: 100%; */
+    z-index: 3;
+    position: relative;
+    width: 35%;
+    padding: 0%;
+    padding-left: 2%;
+    margin-left: -3%;
+    margin-top: 10%;
+    text-align: center;
+  }
+}
+
 /* M E D I A  Q U E R I E S  F O R  A B O U T  T E X T  D I V */
 /* ------------------------------------------------------------------ */
 
@@ -475,20 +503,20 @@ body {
   }
 }
 
-@media screen and (min-width: 567px) and (max-width: 768px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .about-col-right {
-    background:orchid;
+    background:red;
     z-index: 2;
     position: relative;
-    max-width: 70%;
+    max-width: 100%!important;
     padding: 5%;
-    margin-right: 0%;
-    margin-left: 15%;
-    margin-top: -5%;
+    margin-top: -10%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .about-col-right {
     background:red;
     z-index: 2;
@@ -500,7 +528,7 @@ body {
 }
 
 /* Large Viewports - Desktop */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .about-col-right {
     background:yellow;
     z-index: 2;
@@ -558,7 +586,7 @@ body {
     background-color: lightseagreen;
     z-index: 3;
     position: relative;
-    min-width: 40%;
+    min-width: 50%;
     padding: 0px;
     margin-left: 64%;
     text-align: center;
@@ -572,8 +600,19 @@ body {
     position: relative;
     min-width: 40%;
     padding: 0px;
-    margin-left: 63%;
-    
+    margin-left: 53%;
+  }
+}
+
+@media screen and (min-width: 1201px)  {
+  .whatido-col-middle {
+    background-color: lightseagreen;
+    z-index: 3;
+    position: relative;
+    min-width: 50%;
+    padding: 0px;
+    /* margin-left: 64%; */
+    text-align: center;
   }
 }
 
@@ -593,6 +632,7 @@ body {
   /* max-width: 30%; */
 }
 
+/* Sm Viewports */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .whatido-col-right {
     background-color: green;
@@ -608,7 +648,7 @@ body {
   }
 }
 
-
+/* Md */
 @media screen and (min-width: 480px) and (max-width: 576px) {
   .whatido-col-right {
     background-color: greenyellow;
@@ -624,6 +664,7 @@ body {
   }
 }
 
+/* Lg */
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .whatido-col-right {
     background-color: green;
@@ -638,6 +679,7 @@ body {
   }
 }
 
+/* Lg ii */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .whatido-col-right {
     background-color: green;
@@ -651,9 +693,23 @@ body {
   }
 }
 
+/* lg iii to account for any larger viewport */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .whatido-col-right {
     background-color: aliceblue;
+    z-index: 0;
+    position: relative;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    max-height: 40%; 
+    width: 100%;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .whatido-col-right {
+    background-color: orange;
     z-index: 0;
     position: relative;
     margin-top: -10%;
