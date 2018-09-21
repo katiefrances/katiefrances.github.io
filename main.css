@@ -32,6 +32,14 @@ body {
   }
 
 
+  /* Wrapper only for max-width of layout */
+  #wrapper {
+    max-width: 992px;
+
+  }
+  
+
+
  /* ---------------------------- */
 /* NAV */
 
@@ -187,6 +195,7 @@ body {
   max-width: 80%;
   padding: 2%;
   flex-direction: column;
+
 }
 
 
@@ -200,10 +209,10 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 576px)  {
+@media screen and (min-width: 480px) and (max-width: 576px)  {
   .columns-container {
     display: block;
-    background: orange;
+    background: #ffffff;
     flex-direction: column;
     max-width: 100%;
   }
@@ -227,6 +236,17 @@ body {
     display: block;
     flex-direction: column;
     background: #fff;
+    max-width: 45%;
+  }
+}
+
+
+/* Large Viewports - Desktop  */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .columns-container {
+    display: block;
+    flex-direction: column;
+    background: red;
     max-width: 45%;
   }
 }
@@ -313,7 +333,6 @@ body {
   .about-col-left {
     text-align: center;
     position: relative;
-    background: #111;
   }
   
   .about-col-left img {
@@ -401,11 +420,12 @@ body {
     /* max-width: 100%; */
     z-index: 3;
     position: relative;
-    max-width: 35%;
+    width: 25%;
     padding: 0%;
     padding-left: 2%;
-    margin-left: 10%;
+    margin-left: -3%;
     margin-top: 10%;
+    text-align: left;
   }
 }
 
@@ -485,9 +505,9 @@ body {
     background:yellow;
     z-index: 2;
     position: relative;
-    max-width: 90%;
-    /* padding: 1%; */
-    margin-right: 10%;
+    max-width: 100%;
+    padding: 5%;
+    /* margin-right: 30%; */
     margin-top: -10%;
   }
 }
@@ -550,9 +570,9 @@ body {
     background-color: green;
     z-index: 3;
     position: relative;
-    width: 100%;
+    min-width: 40%;
     padding: 0px;
-    margin-left: 40%;
+    margin-left: 63%;
     
   }
 }
@@ -636,11 +656,10 @@ body {
     background-color: aliceblue;
     z-index: 0;
     position: relative;
-    margin-left: 15%;
     margin-top: -10%;
     margin-bottom: 10%;
     max-height: 40%; 
-    width: 70%;
+    width: 100%;
     padding: 5%;
   }
 }
