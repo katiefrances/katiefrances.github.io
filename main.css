@@ -213,7 +213,7 @@ body {
 @media screen and (min-width: 480px) and (max-width: 576px)  {
   .columns-container {
     display: block;
-    background: #ffffff;
+    background: #222;
     flex-direction: column;
     max-width: 100%;
   }
@@ -237,7 +237,7 @@ body {
     display: block;
     flex-direction: column;
     background: #fff;
-    max-width: 45%;
+    max-width: 65%;
   }
 }
 
@@ -370,7 +370,7 @@ body {
     position: relative;
     max-width: 35%;
     padding: 0%;
-    padding-left: 2%;
+    /* padding-left: 2%; */
     margin-left: 10%;
     margin-top: 10%;
     text-align: center;
@@ -383,12 +383,12 @@ body {
     background: yellow;
     z-index: 3;
     position: relative;
-    max-width: 35%;
+    max-width: 22%;
     padding: 0%;
-    padding-left: 2%;
-    margin-left: 10%;
+    /* padding-left: 2%; */
+    margin-left: 12%;
     margin-top: 10%;
-    text-align: left;
+    /* text-align: left; */
   }
 }
 
@@ -400,43 +400,42 @@ body {
     position: relative;
     max-width: 25%;
     padding: 0%;
-    padding-left: 2%;
+    /* padding-left: 2%; */
     margin-left: 10%;
     margin-top: 10%;
-    text-align: start;
+    text-align: center;
     }
 }
 
 /* Medium md */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .about-col-middle {
-    display: block;
-    background: #333;
-    max-width: 30%;
+    background: orangered;
+    /* max-width: 100%; */
     z-index: 3;
     position: relative;
+    width: 30%;
     padding: 0%;
-    padding-left: 2%;
-    margin-left: -3%;
+    /* padding-left: 2%; */
+    margin-left: -4%;
     margin-top: 10%;
-    text-align: start;
+    text-align: center;
   }
 }
 
 /* Large Viewports - Desktop */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .about-col-middle {
-    display: block;
-    background: green;
+    background: orangered;
     /* max-width: 100%; */
     z-index: 3;
     position: relative;
-    width: 25%;
+    width: 30%;
     padding: 0%;
-    padding-left: 2%;
-    margin-left: -3%;
+    /* padding-left: 2%; */
+    margin-left: -4%;
     margin-top: 10%;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -450,10 +449,10 @@ body {
     position: relative;
     width: 35%;
     padding: 0%;
-    padding-left: 2%;
+    /* padding-left: 2%; */
     margin-left: -3%;
     margin-top: 10%;
-    text-align: center;
+    /* text-align: center; */
   }
 }
 
@@ -479,10 +478,10 @@ body {
 /*  Medium VIewports - Tablet */
 @media screen and (min-width: 480px) and (max-width: 576px) {
   .about-col-right {
-    background: aqua;
+    background: peru;
     z-index: 2;
     position: relative;
-    max-width: 70%;
+    max-width: 55%;
     padding: 5%;
     margin-right: 10%;
     margin-left: 15%;
@@ -504,26 +503,28 @@ body {
 }
 
 
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .about-col-right {
-    background:red;
+    background:orange;
     z-index: 2;
     position: relative;
-    max-width: 100%!important;
+    max-width: 70%!important;
     padding: 5%;
     margin-top: -10%;
+    margin-left: 0%;
+
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .about-col-right {
-    background:red;
+    background:plum;
     z-index: 2;
     position: relative;
-    max-width: 60%!important;
+    max-width: 70%;
     padding: 5%;
     margin-top: -10%;
+
   }
 }
 
@@ -533,7 +534,7 @@ body {
     background:yellow;
     z-index: 2;
     position: relative;
-    max-width: 70%;
+    max-width: 80%;
     padding: 5%;
     /* margin-right: 30%; */
     margin-top: -10%;
@@ -568,14 +569,14 @@ body {
 }
 
 /* Medium Viewport - Tablets */
-@media screen and (min-width:480px) and (max-width: 576px) {
+@media screen and (min-width: 480px) and (max-width: 576px) {
   .whatido-col-middle {
-    background-color: lightseagreen;
+    background-color: peru;
     z-index: 3;
     position: relative;
-    min-width: 50%;
+    max-width: 35%;
     padding: 0px;
-    margin-left: 38%;
+    margin-left: 54%;
     text-align: center;
   }
 }
@@ -588,19 +589,20 @@ body {
     position: relative;
     min-width: 50%;
     padding: 0px;
-    margin-left: 64%;
+    margin-left: 53%;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px)  {
   .whatido-col-middle {
-    background-color: green;
+    background-color: lightseagreen;
     z-index: 3;
     position: relative;
     min-width: 40%;
     padding: 0px;
-    margin-left: 53%;
+    margin-left: 64%;
+    text-align: center;
   }
 }
 
@@ -656,11 +658,11 @@ body {
     position: relative;
     margin-left: 15%;
     margin-top: -10%;
+    margin-left: 31%;
     margin-bottom: 10%;
     height: 40%; 
-    max-width: 70%;
-    padding: 5%;
-    /* max-width: 30%; */
+    max-width: 55%;
+    padding: 5%;  
   }
 }
 
@@ -682,13 +684,14 @@ body {
 /* Lg ii */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .whatido-col-right {
-    background-color: green;
+    background-color: purple;
     z-index: 0;
     position: relative;
+    margin-left: 30%;
     margin-top: -8%;
     margin-bottom: 10%;
     height: 40%; 
-    width: 100%;
+    max-width: 100%;
     padding: 5%;
   }
 }
@@ -696,12 +699,13 @@ body {
 /* lg iii to account for any larger viewport */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .whatido-col-right {
-    background-color: aliceblue;
+    background-color: olivedrab;
     z-index: 0;
     position: relative;
-    margin-top: -10%;
+    margin-top: -8%;
     margin-bottom: 10%;
-    max-height: 40%; 
+    margin-left: 30%;
+    height: 40%; 
     width: 70%;
     padding: 5%;
   }
@@ -714,9 +718,9 @@ body {
     position: relative;
     margin-top: -10%;
     margin-bottom: 10%;
-    margin-left:30%;
+    margin-left: 20%;
     max-height: 40%; 
-    width: 70%;
+    width: 80%;
     padding: 5%;
   }
 }
