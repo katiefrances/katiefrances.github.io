@@ -521,7 +521,7 @@ body {
     background:red;
     z-index: 2;
     position: relative;
-    max-width: 100%!important;
+    max-width: 60%!important;
     padding: 5%;
     margin-top: -10%;
   }
@@ -606,12 +606,12 @@ body {
 
 @media screen and (min-width: 1201px)  {
   .whatido-col-middle {
-    background-color: lightseagreen;
+    background-color: orchid;
     z-index: 3;
     position: relative;
     min-width: 50%;
     padding: 0px;
-    /* margin-left: 64%; */
+    margin-left: 53%;
     text-align: center;
   }
 }
@@ -702,7 +702,7 @@ body {
     margin-top: -10%;
     margin-bottom: 10%;
     max-height: 40%; 
-    width: 100%;
+    width: 70%;
     padding: 5%;
   }
 }
@@ -714,7 +714,7 @@ body {
     position: relative;
     margin-top: -10%;
     margin-bottom: 10%;
-    margin-left: 10%;
+    margin-left:30%;
     max-height: 40%; 
     width: 70%;
     padding: 5%;
