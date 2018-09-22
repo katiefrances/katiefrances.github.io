@@ -533,7 +533,7 @@ body {
     background:yellow;
     z-index: 2;
     position: relative;
-    max-width: 100%;
+    max-width: 70%;
     padding: 5%;
     /* margin-right: 30%; */
     margin-top: -10%;
@@ -714,8 +714,9 @@ body {
     position: relative;
     margin-top: -10%;
     margin-bottom: 10%;
+    margin-left: 10%;
     max-height: 40%; 
-    width: 100%;
+    width: 70%;
     padding: 5%;
   }
 }
