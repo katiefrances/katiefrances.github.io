@@ -213,7 +213,7 @@ body {
 @media screen and (min-width: 480px) and (max-width: 576px)  {
   .columns-container {
     display: block;
-    background: #222;
+    background: #fff;
     flex-direction: column;
     max-width: 100%;
   }
@@ -375,7 +375,7 @@ body {
 /* XS Viewports - Phone */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-col-middle {
-    background:yellow;
+    background: yellow;
     z-index: 3;
     position: relative;
     max-width: 35%;
@@ -504,8 +504,8 @@ body {
     background:magenta;
     z-index: 2;
     position: relative;
-    max-width: 70%;
-    padding: 2%;
+    max-width: 50%;
+    padding: 5%;
     margin-right: 0%;
     margin-left: 15%;
     margin-top: -5%;
@@ -679,15 +679,16 @@ body {
 /* Lg */
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .whatido-col-right {
-    background-color: green;
+    background-color: greenyellow;
     z-index: 0;
     position: relative;
     margin-left: 15%;
-    margin-top: -8%;
+    /* margin-top: -10%; */
+    margin-left: 31%;
     margin-bottom: 10%;
     height: 40%; 
-    max-width: 100%;
-    padding: 5%;
+    max-width: 55%;
+    padding: 5%;  
   }
 }
 
