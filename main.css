@@ -420,7 +420,7 @@ body {
 /* Medium md */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .about-col-middle {
-    background: orangered;
+    background: yellow;
     /* max-width: 100%; */
     z-index: 3;
     position: relative;
@@ -436,7 +436,7 @@ body {
 /* Large Viewports - Desktop */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .about-col-middle {
-    background: orangered;
+    background: yellow;
     /* max-width: 100%; */
     z-index: 3;
     position: relative;
@@ -453,7 +453,7 @@ body {
 @media screen and (min-width: 1201px) {
   .about-col-middle {
     display: block;
-    background: green;
+    background: yellow;
     /* max-width: 100%; */
     z-index: 3;
     position: relative;
@@ -474,7 +474,7 @@ body {
 /* Small Viewports - Phones */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-col-right {
-    background: aqua;
+    background: #999;
     z-index: 2;
     position: relative;
     max-width: 70%;
@@ -488,7 +488,7 @@ body {
 /*  Medium VIewports - Tablet */
 @media screen and (min-width: 480px) and (max-width: 576px) {
   .about-col-right {
-    background: peru;
+    background: #999;
     z-index: 2;
     position: relative;
     max-width: 55%;
@@ -501,7 +501,7 @@ body {
 
 @media screen and (min-width: 576px) and (max-width: 768px){
   .about-col-right {
-    background:magenta;
+    background: #999;
     z-index: 2;
     position: relative;
     max-width: 50%;
@@ -515,7 +515,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .about-col-right {
-    background:plum;
+    background: #999;
     z-index: 2;
     position: relative;
     max-width: 70%;
@@ -528,7 +528,7 @@ body {
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .about-col-right {
-    background:plum;
+    background: #999;
     z-index: 2;
     position: relative;
     max-width: 70%;
@@ -541,7 +541,7 @@ body {
 /* Large Viewports - Desktop */
 @media screen and (min-width: 1201px) {
   .about-col-right {
-    background:yellow;
+    background: #999;
     z-index: 2;
     position: relative;
     max-width: 80%;
@@ -556,7 +556,7 @@ body {
 /* ------------------------------------------------------------------ */
 
 .whatido-col-middle {
-  background: magenta;
+  background: #999;
   z-index: 3;
   position: relative;
   max-width: 50%;
@@ -568,7 +568,7 @@ body {
 /* Small Viewports - Phones */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .whatido-col-middle {
-    background-color: lightseagreen;
+    background-color: #999;
     z-index: 3;
     position: relative;
     max-width: 50%;
@@ -581,7 +581,7 @@ body {
 /* Medium Viewport - Tablets */
 @media screen and (min-width: 480px) and (max-width: 576px) {
   .whatido-col-middle {
-    background-color: peru;
+    background-color: #999;
     z-index: 3;
     position: relative;
     max-width: 35%;
@@ -594,7 +594,7 @@ body {
 /* Large Viewport - Desktop */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .whatido-col-middle {
-    background-color: lightseagreen;
+    background-color: #999;
     z-index: 3;
     position: relative;
     min-width: 50%;
@@ -606,7 +606,7 @@ body {
 
 @media screen and (min-width: 992px) and (max-width: 1200px)  {
   .whatido-col-middle {
-    background-color: lightseagreen;
+    background-color: #999;
     z-index: 3;
     position: relative;
     min-width: 40%;
@@ -618,7 +618,7 @@ body {
 
 @media screen and (min-width: 1201px)  {
   .whatido-col-middle {
-    background-color: orchid;
+    background-color: #999;
     z-index: 3;
     position: relative;
     min-width: 50%;
@@ -647,7 +647,7 @@ body {
 /* Sm Viewports */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .whatido-col-right {
-    background-color: green;
+    background-color: #444;
     z-index: 0;
     position: relative;
     margin-left: 15%;
@@ -663,7 +663,7 @@ body {
 /* Md */
 @media screen and (min-width: 480px) and (max-width: 576px) {
   .whatido-col-right {
-    background-color: greenyellow;
+    background-color: #444;
     z-index: 0;
     position: relative;
     margin-left: 15%;
@@ -679,7 +679,7 @@ body {
 /* Lg */
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .whatido-col-right {
-    background-color: greenyellow;
+    background-color: #444;
     z-index: 0;
     position: relative;
     margin-left: 15%;
@@ -695,7 +695,7 @@ body {
 /* Lg ii */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .whatido-col-right {
-    background-color: purple;
+    background-color: #444;
     z-index: 0;
     position: relative;
     margin-left: 30%;
@@ -710,7 +710,7 @@ body {
 /* lg iii to account for any larger viewport */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .whatido-col-right {
-    background-color: olivedrab;
+    background-color: #444;
     z-index: 0;
     position: relative;
     margin-top: -8%;
@@ -724,7 +724,7 @@ body {
 
 @media screen and (min-width: 1201px) {
   .whatido-col-right {
-    background-color: orange;
+    background-color: #444;
     z-index: 0;
     position: relative;
     margin-top: -10%;
