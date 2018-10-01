@@ -884,27 +884,52 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .footer-inner {
-    /* width: 80%; */
+    width: 80%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: orange;
   }
 }
 
 .footer-col-left {
-  background: #222;
+  background: red;
   padding: 5%;
+  text-align: center;
+}
+
+/* Media queries */ 
+
+
+/* To stack columns on small viewports */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-col-left {
+    background: green;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    flex-direction: column;
+  }  
 }
 
 .footer-col-right {
-  background: #444;
+  background: yellow;
   padding: 5%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-col-right {
+    background: yellow;
+    padding: 5%;
+    width: 100%;
+  } 
 }
  
