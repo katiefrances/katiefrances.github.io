@@ -874,7 +874,9 @@ body {
 
 
 /* ---------------------------- */
+
 /* FOOTER */
+
 .footer {
   height: 80vh;
   background: #555;
@@ -885,7 +887,7 @@ body {
 }
 
 .footer-inner {
-  width: 70%;
+  width: 80%;
   height: 80%;
   display: flex;
   justify-content: center;
@@ -893,24 +895,31 @@ body {
   flex-direction: column;
 }
 
-@media screen and (max-width: 320px) {
-  .footer-inner {
-    /* width: 80%; */
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+/* note to self: @media query for column stacking */
+
+.footer-cols-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 
-.footer-col-left {
-  background: #222;
-  padding: 5%;
+.footer-left-col {
+  background: #111;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.footer-right-col {
+  background: #2222;
+  width: 50%;
 }
 
-.footer-col-right {
-  background: #444;
-  padding: 5%;
-}
- 
+
+
+/* ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
