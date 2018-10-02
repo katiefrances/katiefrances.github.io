@@ -879,12 +879,13 @@ body {
 }
 
 .footer-inner {
-  width: 70%;
+  width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* flex-direction: column; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* align-self: center */
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -903,7 +904,22 @@ body {
   background: red;
   padding: 5%;
   text-align: center;
+  align-content: center;
+  align-self: center;
+  /* padding: 5%; */
 }
+
+.left-links {
+  text-align: left;
+  background: orange;
+}
+
+.left-links li {
+  background: blue;
+  width: 100%;
+  text-align: center
+}
+
 
 /* Media queries */ 
 
@@ -919,9 +935,12 @@ body {
   }  
 }
 
+/* Media queries for stacking on small viewports */
 .footer-col-right {
   background: yellow;
+  text-align: center;
   padding: 5%;
+  align-self: center;
 }
 
 
