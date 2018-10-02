@@ -879,76 +879,39 @@ body {
 }
 
 .footer-inner {
-  width: 100%;
+  width: 80%;
   height: 80%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* align-content: center; */
-  /* align-self: center */
+  align-items: center;
+  background: #111;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer-inner {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: orange;
-  }
-}
-
-.footer-col-left {
-  background: red;
-  padding: 5%;
-  text-align: center;
-  align-content: center;
-  align-self: center;
-  /* padding: 5%; */
-}
-
-.left-links {
-  text-align: left;
+.footer-cols-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: orange;
+  width: 90%;
 }
 
-.left-links li {
-  background: blue;
-  width: 100%;
-  text-align: center
+.footer-left-col {
+  background: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
+/* ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
 
-/* Media queries */ 
-
-
-/* To stack columns on small viewports */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer-col-left {
-    background: green;
-    width: 100%;
-    padding: 5%;
-    text-align: center;
-    flex-direction: column;
-  }  
-}
-
-/* Media queries for stacking on small viewports */
-.footer-col-right {
+.footer-right-col {
   background: yellow;
-  text-align: center;
-  padding: 5%;
-  align-self: center;
+  width: 50%;
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer-col-right {
-    background: yellow;
-    padding: 5%;
-    width: 100%;
-  } 
-}
- 
