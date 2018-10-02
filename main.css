@@ -795,7 +795,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .skills-inner {
@@ -803,6 +803,14 @@ body {
   display: flex;
   padding: 10px;
   flex-direction: column;
+  /* background: red; */
+}
+
+.skills-column-container {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 320px) {
