@@ -884,34 +884,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #111;
   flex-direction: column;
 }
+
+/* note to self: @media query for column stacking */
 
 .footer-cols-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: orange;
   width: 90%;
 }
 
 .footer-left-col {
-  background: red;
+  background: #111;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 50%;
 }
+.footer-right-col {
+  background: #2222;
+  width: 50%;
+}
+
+
 
 /* ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 } */
-
-.footer-right-col {
-  background: yellow;
-  width: 50%;
-}
-
