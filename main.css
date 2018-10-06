@@ -863,7 +863,11 @@ body {
 .get-in-touch-col-left {
   text-align: center;
   background: yellow;
-  padding: 2%;
+  padding: 1%;
+  width: 70%;
+  font-size: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 /* XS Viewport */
@@ -877,6 +881,40 @@ body {
   }
 }
 
+/* SM Viewport */
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .get-in-touch-col-left {
+    background: grey;
+    width: 80%;
+    font-size: 80%;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* MD Viewport */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .get-in-touch-col-left {
+    background: goldenrod;
+    width: 80%;
+    font-size: 80%;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* MD Viewport */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .get-in-touch-col-left {
+    background: goldenrod;
+    width: 80%;
+    font-size: 80%;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
 /* LEFT COL HEADING */
 
 .contact-h1 {
@@ -885,26 +923,19 @@ body {
   font-size: 200%;
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .contact-h1 {
-    text-align: left;
-    padding-left: 2%;
-  }
-}
-
 /* RIGHT COL HEADING */
 
 .email-h1 {
   text-align: left;
   padding-left: 2%;
   font-size: 200%;
+  margin-left: 5%;
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .email-h1 {
-    text-align: right;
+    text-align: left;
     padding-left: 2%;
     max-width: 60%;
     margin-left: 5%;
@@ -913,16 +944,34 @@ body {
 
 
 /* RIGHT COL DIV */
+/* ------------------------------------------------------- */
 
 .get-in-touch-col-right {
   background: orange;
-  text-align: end;
+  font-size: 80%;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: -2%;
+  position: absolute;
   padding: 2%;
 }
 
+/* XS Viewports */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .get-in-touch-col-right {
     background: rebeccapurple;
+    font-size: 70%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -2%;
+    position: absolute;
+  }
+}
+
+/* SM Viewports */
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .get-in-touch-col-right {
+    background: firebrick;
     font-size: 70%;
     width: 80%;
     margin-left: 10%;
@@ -932,8 +981,33 @@ body {
   }
 }
 
+/* MD Viewports */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .get-in-touch-col-right {
+    background: aqua;
+    font-size: 70%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -2%;
+    position: absolute;
 
+  }
+}
 
+/* LG Viewports */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .get-in-touch-col-right {
+    background: aquamarine;
+    font-size: 70%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -2%;
+    position: absolute;
+
+  }
+}
+
+/*  XLG  */
 
 /* ---------------------------- */
 
