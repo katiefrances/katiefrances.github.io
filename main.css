@@ -747,7 +747,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
+  padding: 2%;
 }
 
 .work-inner {
@@ -762,12 +762,15 @@ body {
 
 /* PROJECTS/PHOTOGRAPHY COLUMNS & IMAGES */
 .projects-col {
-  /* background: red; */
+  background: red;
+  padding: 2%;
 }
 
 .photography-col {
-  /* background: yellow; */
-  /* align-self: flex-end; */
+  background: yellow;
+  align-self: flex-end;
+  padding: 2%;
+
 }
 
 /*  img  */
