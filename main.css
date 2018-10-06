@@ -856,21 +856,26 @@ body {
 .get-in-touch-inner-container {
   background: red;
   display: block;
-  width: 100%;;
+  width: 100%;
 }
 
 /* Heading */
-.get-in-touch-col-middle {
-  /* align-self: flex-start; */
+.get-in-touch-col-left {
   text-align: center;
-  width: 50%;
   background: yellow;
   padding: 2%;
-  /* z-index: 3; */
-  position: absolute;
-  margin-top: 10%;
-  margin-left: 40%;
 }
+
+/* XS Viewport */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .get-in-touch-col-left {
+    background: hotpink;
+    width: 70%;
+    font-size: 70%;
+  }
+}
+
+/* LEFT COL HEADING */
 
 .contact-h1 {
   text-align: left;
@@ -878,23 +883,49 @@ body {
   font-size: 200%;
 }
 
-.get-in-touch-col-right {
-  /* align-self: flex-end; */
-  background: orange;
-  width: 60%;
-  text-align: center;
-  padding: 2%;
-  /* margin-top: -10%; */
-  /* z-index: 0; */
-  position: relative;
-}
 
-@media screen and (max-width:320px) {
-  .get-in-touch-col-right {
-    background-color: #222;
-    padding: 5%;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contact-h1 {
+    text-align: left;
+    padding-left: 2%;
   }
 }
+
+/* RIGHT COL HEADING */
+
+.email-h1 {
+  text-align: left;
+  padding-left: 2%;
+  font-size: 200%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .email-h1 {
+    text-align: left;
+    padding-left: 2%;
+    max-width: 60%;
+  }
+}
+
+
+/* RIGHT COL */
+
+.get-in-touch-col-right {
+  background: orange;
+  text-align: center;
+  padding: 2%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .get-in-touch-col-right {
+    background: rebeccapurple;
+    font-size: 70%;
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
 
 
 
